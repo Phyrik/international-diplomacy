@@ -1,0 +1,50 @@
+html {
+    font-family: 'Rokkitt', serif;
+}
+
+a {
+    color: black;
+}
+
+.title {
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline;
+    color: black;
+}
+
+.side-bar {
+    background-color: grey;
+    width: fit-content;
+    text-align: center;
+}
+
+.top-bar {
+    overflow: hidden;
+    background-color: grey;
+}
+
+.home-flag {
+    width: 250px;
+    float: left;
+}
+
+.country-name-title {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 75px;
+}
+
+.profile-button {
+    float: right;
+    text-align: center;
+}
+
+.side-bar-image {
+    width: 5vw;
+}
+
+a {
+    text-decoration: none;
+}
