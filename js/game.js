@@ -20,10 +20,10 @@ sideBarDiv.style.width = internationalImage.clientWidth*1.75 + "px"
 
 // Google auth2 stuff
 
-
+let auth2
 window.onLoadCallback = function () {
     gapi.load('auth2', function () {
-        var auth2 = gapi.auth2.init()
+        auth2 = gapi.auth2.init()
     })
 }
 
