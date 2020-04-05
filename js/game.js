@@ -17,3 +17,11 @@ profileButtonDiv.style.marginRight = (topBarHeight/4) + "px"
 profileButtonImage.style.width = (topBarHeight/2) + "px"
 profileButtonImage.style.height = (topBarHeight/2) + "px"
 sideBarDiv.style.width = internationalImage.clientWidth*1.75 + "px"
+
+// Google auth2 stuff
+
+if (auth2.isSignedIn().get()) {
+    var profile = auth2.currentUser.get().getBasicProfile()
+    var emailParagraph = document.querySelector("#email")
+    emailParagraph.innerHTML = profile.getEmail()
+}

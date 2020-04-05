@@ -7,9 +7,13 @@ a {
     text-decoration: underline;
 }
 
+h1 {
+    font-size: 75px;
+    text-align: center;
+}
+
 .title {
     text-align: center;
-    font-size: 70px;
     text-decoration: underline;
     color: black;
 }
