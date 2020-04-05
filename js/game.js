@@ -18,5 +18,5 @@ profileButtonImage.style.width = (topBarHeight/2) + "px"
 profileButtonImage.style.height = (topBarHeight/2) + "px"
 sideBarDiv.style.width = internationalImage.clientWidth*1.75 + "px"
 
-var emailParagraph = document.querySelector("#email")
+var emailParagraph = document.getElementById("email")
 emailParagraph.innerHTML = localStorage.getItem("GUserEmail")
