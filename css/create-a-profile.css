@@ -5,3 +5,11 @@ html {
 #title {
     font-size: 75px;
 }
+
+.g-signin2{
+    width: 100%;
+}
+  
+.g-signin2 > div{
+    margin: 0 auto;
+}
