@@ -20,7 +20,9 @@ sideBarDiv.style.width = internationalImage.clientWidth*1.75 + "px"
 
 // Google auth2 stuff
 
-var auth2 = gapi.auth2.init()
+window.onLoadCallback = function () {
+    var auth2 = gapi.auth2.init()
+}
 
 if (auth2.isSignedIn().get()) {
     var profile = auth2.currentUser.get().getBasicProfile()
