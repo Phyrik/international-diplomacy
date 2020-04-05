@@ -20,6 +20,8 @@ sideBarDiv.style.width = internationalImage.clientWidth*1.75 + "px"
 
 // Google auth2 stuff
 
+auth2 = gapi.auth2.init()
+
 if (auth2.isSignedIn().get()) {
     var profile = auth2.currentUser.get().getBasicProfile()
     var emailParagraph = document.querySelector("#email")
