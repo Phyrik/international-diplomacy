@@ -1,5 +1,3 @@
-function googleSignOut() {
-    localStorage.removeItem("GUserEmail")
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut()
-}
+setTimeout(() => {
+    window.location.href = "../index.html"
+}, 2000)
