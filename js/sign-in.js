@@ -15,7 +15,7 @@ function googleSignOut() {
     sessionStorage.removeItem("GUserID")
     sessionStorage.removeItem("GUserEmail")
     var auth2 = gapi.auth2.getAuthInstance()
-    auth2.signOut()
-    alert("Signed out. Click ok to go back to the homepage")
-    window.location.href = "../index.html"
+    auth2.signOut().then(
+        window.location.href = "./sign-out.html"
+    )
 }
