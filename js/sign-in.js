@@ -12,7 +12,8 @@ function onGoogleSignIn(googleUser) {
 }
 
 function googleSignOut() {
-    localStorage.removeItem("GUserEmail")
+    sessionStorage.removeItem("GUserID")
+    sessionStorage.removeItem("GUserEmail")
     var auth2 = gapi.auth2.getAuthInstance()
     auth2.signOut()
     console.log("signed out")
