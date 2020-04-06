@@ -6,7 +6,8 @@ function onGoogleSignIn(googleUser) {
         return
     }
     var Gprofile = googleUser.getBasicProfile()
-    localStorage.setItem("GUserEmail", Gprofile.getEmail())
+    sessionStorage.setItem("GUserID", Gprofile.getId())
+    sessionStorage.setItem("GUserEmail", Gprofile.getEmail())
     window.location.href = "./game.html"
 }
 
