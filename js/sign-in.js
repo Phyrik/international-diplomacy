@@ -15,5 +15,5 @@ function googleSignOut() {
     var auth2 = gapi.auth2.getAuthInstance()
     auth2.signOut()
     console.log("signed out")
-    //window.location.href = "./sign-out.html"
+    window.location.href = "./sign-out.html"
 }
