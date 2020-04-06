@@ -8,7 +8,7 @@ function onGoogleSignIn(googleUser) {
     var Gprofile = googleUser.getBasicProfile()
     sessionStorage.setItem("GUserID", Gprofile.getId())
     sessionStorage.setItem("GUserEmail", Gprofile.getEmail())
-    window.location.href = "./game.html"
+    window.location.href = "./game.html?user-id=" + Gprofile.getId()
 }
 
 function googleSignOut() {
